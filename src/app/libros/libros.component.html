@@ -1,0 +1,50 @@
+<h3>Lista de Libros!</h3>
+
+<!-- <button (click)="esVisible = !esVisible" >Toggle</button> -->
+
+<!-- bindeo de propiedades -->
+
+<!-- <button [disabled]="estaDesactivado">Mostrar Libros</button> -->
+
+<!-- bindeo de eventos -->
+
+<!-- <button 
+(click)="handleClick()"
+(mouseover)="handleClick()"
+[disabled]="estaDesactivado">Mostrar Libros
+</button> -->
+
+<!-- bindeo doble via -->
+
+<!-- <input type="text" 
+[(ngModel)]="inputContent" />
+<p>{{ inputContent }}</p> -->
+
+
+<!-- directivas -->
+
+<!-- se puede hacer inline on con funciones -->
+
+<!-- <button (click)="this.esVisible = !this.esVisible"> -->
+
+    <!-- ng container es un tag especial de angular -->
+
+    <!-- <ng-container *ngIf="!esVisible">Mostrar Libros</ng-container>
+    <ng-container *ngIf="esVisible">Ocultar Libros</ng-container>
+</button> -->
+
+
+<!-- interpolacion  -->
+
+<ul *ngIf="esVisible">
+    <ng-container *ngFor="let cadaLibro of libros">
+        <app-libro [libro]="cadaLibro"></app-libro>
+    </ng-container>
+</ul>
+
+<!-- PIPES  (transformacion) https://angular.io/api/core/PipeTransform-->
+
+
+
+
+

@@ -1,0 +1,9 @@
+<li>
+    <img src="{{ libro.src }}" 
+    alt="{{ libro.nombre }}" 
+    width="100" />
+    <p class="nombre-Autor">{{ libro.nombre | titlecase }} de {{ libro.autor | titlecase }}</p>
+    <p class="precio"> {{ libro.precio | currency:"UYU" }}</p>
+    <button *ngIf="!estaEnCarro" (click)="agregarAlCarro()">Añadir al carrito</button>
+    <button *ngIf="estaEnCarro" (click)="quitarDelCarro()">Quitar del carrito</button>
+</li>
