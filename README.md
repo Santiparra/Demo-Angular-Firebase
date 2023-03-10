@@ -1,5 +1,7 @@
 # AngularDemo
 
+#### Proyecto para practicar algunos conceptos de Angular, no debe tomarse como producto final ya que solo es una prueba de conceptos.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
 ## Development server
